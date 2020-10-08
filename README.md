@@ -1,24 +1,35 @@
-# Anscombe
-## Science des données II : modélisation
-## Guyliann Engels & Philippe Grosjean
+# Exercices pratiques sur le Module 2 Régression linéaire II
 
-## Objectif du travail
+## Avant-propos
 
-Nous attendons un rapport individuel sous le format d'un notebook d'analyse. Il ne s'agit pas d'un rapport scientifique conventionnel qui comprend les parties que vous connaissez bien (introduction, matériels & méthodes, but, ....).
+Cette séance d'exercices est en cours de développement. N'hésitez pas à vérifier le lien suivant afin de voir si des modifications n'ont pas été apportées dans les consignes : https://github.com/BioDataScience-Course/B02Ga_anscombe
 
-- Votre rapport doit respecter la logique suivante :
+## Objectifs
 
-- but : Quelle est la question que vous vous posez ? cette information se trouve dans la section ci-dessus.
+Ce projet est un projet **individuel**, **court** et **cadré** qui doit être **terminé pour la fin du module 2**. 
 
-- analyse : Cette section doit montrer l'évoluton de votre analyse des données. (par exemple, visualisation des données par nuage de points, puis réalisation du modèle, analyse du tableau des résultats, puis analyse des résidus via les différents tableaux,...). Chaque graphiqe doit être commenté dans le texte en dessous de ce dernier.
+- Savoir lire et interpréter les informations fournies par la fonction `summary()` appliquée à un objet `lm`. 
 
-Vous devez donc créer ce document au format et analysez le jeu de données `anscombe` et le package `datasets`. 
+- Savoir utiliser et interpréter les outils de diagnostic de la régression linéaire correctement
 
-Ce jeu de données comprend 8 variables `x1, x2, x3, x4, y1, y2, y3, y4` . Réalisez des régressions linéaires entre :
+## Consignes 
 
-- y1 ~ x1
-- y2 ~ x2
-- y3 ~ x3
-- y4 ~ x4
+Au sein du fichier `anscombe.Rmd`, qui se trouve dans le dossier `docs` : 
 
-Justifiez vos analyses. N'hésitez pas à faire appel à la fonction d'aide dans R sur le jeu de données `anscombe`
+- Importez le jeu de données `anscombe` depuis le package `datasets`. 
+
+- Réalisez un graphique pour chacunes des combinaisons suivantes et assemblez les sur une seule figure :
+    + y1 ~ x1
+    + y2 ~ x2
+    + y3 ~ x3
+    + y4 ~ x4
+    
+- Calculez les coefficients de corrélation pour chaque combinaison
+
+- Ensuite, pour chaque combinaison :
+    + réalisez une régression linéaire
+    + analysez et commentez le tableau de résultats
+    + analysez les résidus, sélectionnez 3 graphiques intéressants parmi les 6 vus au cours et commentez les. 
+    
+- Terminez par une conclusion générale
+    

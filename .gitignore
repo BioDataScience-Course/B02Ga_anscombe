@@ -37,3 +37,12 @@ vignettes/*.pdf
 
 # Shiny token, see https://shiny.rstudio.com/articles/shinyapps.html
 rsconnect/
+
+# R Environment Variables
+.Renviron
+
+# html and pdf in docs
+
+docs/*.html
+docs/*.pdf
+docs/*.nb.html
